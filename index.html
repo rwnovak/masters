@@ -4,20 +4,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body { color: white; background: repeating-linear-gradient(0deg, #005a47, #005a47 0px, #005e4a 3px, #005e4a 4px); margin: 0; padding: clamp(10px, 4vw, 30px); display: flex; flex-direction: column; align-items: flex-start; }
-.card { background: linear-gradient(0deg, rgba(19, 54, 47, 0.45), rgba(24, 69, 59, 0.6)); box-shadow: 0px 4px 6px rgba(18, 61, 42, 1); padding: clamp(10px, 3vw, 20px); display: inline-block; border-radius: 0.8rem; margin: 0 0 20px 0; text-align: left; }
+.card { background: linear-gradient(0deg, rgba(19, 54, 47, 0.45), rgba(24, 69, 59, 0.6)); box-shadow: 0px 4px 6px rgba(18, 61, 42, 1); padding: clamp(10px, 3vw, 20px); display: inline-block; border-radius: clamp(0.8rem, 2vw, 1.2rem); margin: 0 0 clamp(20px, 4vw, 40px) 0; text-align: left; }
 .pool-leaderboard { text-align: center; }
 hr.margin-0 { margin: 0px 0; border: none; border-top: 0px solid #ccc; }
 hr.margin-2 { margin: 2px 0; border: none; border-top: 0px solid #ccc; }
 .pill-gray { background: linear-gradient(0deg, #808080, #A0A0A0); color: #000000; font-weight: bold; font-family: 'Helvetica Narrow', sans-serif; padding: 2px 4px; margin-top: 5px; display: inline-block; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.0); border-top-left-radius: 1px; border-bottom-left-radius: 1px; }
-.pill-red { background: linear-gradient(0deg, #800000, #A00000); color: white; font-family: 'Helvetica Narrow', sans-serif; font-weight: bold; padding: 2px 4px; margin-top: 5px; display: inline-block; width: 3ch; text-align: center; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.0); border-top-right-radius: 1px; border-bottom-right-radius: 1px; }
-.mono-line { font-family: 'Ubuntu Mono', monospace; font-size: clamp(0.5rem, 2.5vw, 1.1rem); white-space: pre; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); line-height: 2.0; }
+.pill-red { background: linear-gradient(0deg, #800000, #A00000); color: white; font-family: 'Helvetica Narrow', sans-serif; font-weight: bold; padding: 2px 4px; margin-top: 5px; display: inline-block; min-width: 4ch; text-align: center; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.0); border-top-right-radius: 1px; border-bottom-right-radius: 1px; }
+.mono-line { font-family: 'Ubuntu Mono', monospace; font-size: clamp(0.5rem, 2.5vw, 0.9rem); white-space: pre; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); line-height: 2.0; }
 .mono-center { text-align: center; }
 .spacer { line-height: 0.1; font-size: clamp(0.1rem, 0.5vw, 0.2rem); white-space: pre; }
 .spacer-large { line-height: 0.1; font-size: clamp(0.3rem, 1.5vw, 0.6rem); white-space: pre; }
-.narrow-line { font-family: 'Helvetica Narrow', sans-serif; font-size: clamp(0.5rem, 2.5vw, 1.1rem); color: #e2e2e2; white-space: pre; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); line-height: 2.0; }
-.highlight { font-weight: bold; font-size: clamp(0.55rem, 2.8vw, 1.2rem); margin-top: 4px; }
+.narrow-line { font-family: 'Helvetica Narrow', sans-serif; font-size: clamp(0.5rem, 2.5vw, 0.9rem); color: #e2e2e2; white-space: pre; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); line-height: 2.0; }
+.highlight { font-weight: bold; font-size: clamp(0.55rem, 2.8vw, 1.0rem); margin-top: 4px; }
 .warning { color: #ff0000; }
-.rank-line { font-weight: bold; font-size: clamp(0.7rem, 3.5vw, 1.5rem); color: #ffdf00; margin-top: 0; margin-bottom: 5px; line-height: 1; letter-spacing: 0.06em; }
+.rank-line { font-weight: bold; font-size: clamp(0.7rem, 3.5vw, 1.2rem); color: #ffdf00; margin-top: 0; margin-bottom: 5px; line-height: 1; letter-spacing: 0.06em; }
 .rank-center { margin-top: 5px; text-align: center; letter-spacing: 0; }
 </style>
 <script>
